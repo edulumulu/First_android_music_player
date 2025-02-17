@@ -80,10 +80,10 @@ public class MainActivity extends AppCompatActivity {
             //Caso de ListView
         lista = findViewById(R.id.LV_listaListView);
 
-            //Chequear permisos
+        //Chequear permisos
         //chequearPermisos();
 
-            //Opciones de cargar archivos
+        //Opciones de cargar archivos
         cargarArchivosDesdeAssets();
         //cargarArchivos();
         //cargarArchivosDesdeRaw();
@@ -276,7 +276,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //Si mi version es menor a la 23
+
 
     private void chequearPermisos(){
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M){
