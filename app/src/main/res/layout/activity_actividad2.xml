@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#451002"
+    tools:context=".Actividad2">
+
+
+    <ImageView
+        android:id="@+id/iv_carátula"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pb_barraProgreso"
+        />
+
+    <TextView
+        android:id="@+id/tv_prueba"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:text="TextView"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/iv_carátula"
+
+        />
+    <TextView
+        android:id="@+id/tv_autordetalle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_prueba"
+
+        />
+
+    <ImageButton
+        android:id="@+id/ib_play"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/play" />
+
+    <ImageButton
+        android:id="@+id/ib_stop"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ib_play"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/ib_tenmore"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ib_stop"
+        android:src="@drawable/tenmore" />
+
+    <ImageButton
+        android:id="@+id/ib_tenless"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ib_play"
+        android:src="@drawable/tenless" />
+
+    <ImageButton
+        android:id="@+id/ib_next"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ib_tenmore"
+        android:src="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/ib_prev"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ib_tenless"
+        android:src="@drawable/previous" />
+
+    <ImageButton
+        android:id="@+id/ib_regreso"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <!--
+    <Button
+        android:id="@+id/bt_regreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Volver a la lista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent" />
+         -->
+
+    <ProgressBar
+        android:id="@+id/pb_barraProgreso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#D3D0D0"
+        app:layout_constraintStart_toStartOf="@+id/ib_prev"
+        app:layout_constraintEnd_toEndOf="@+id/ib_next"
+        app:layout_constraintBottom_toTopOf="@+id/ib_play"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
