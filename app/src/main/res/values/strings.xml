@@ -1,3 +1,8 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">My Application</string>
+=======
+    <string name="app_name">Actividad 3 M08</string>
+    <string name="titulo">LISTA DE CANCIONES DE ASSETS</string>
+>>>>>>> 8535eec10ebe3bcf705e4103711305b7f58cfa40
 </resources>
